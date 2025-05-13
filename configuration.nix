@@ -4,8 +4,6 @@
   imports =
     [
       ./hardware-configuration.nix
-      ./modules/umakanth.nix
-      ./modules/hardware.nix
     ];
     
   boot.loader.systemd-boot.enable = true;

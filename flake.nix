@@ -5,7 +5,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: {
+  outputs = { self, nixpkgs, home-manager, ... } @ inputs: {
     nixosConfigurations.reddy = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux"; # Adjust if your architecture is different
       modules = [
@@ -14,7 +14,11 @@
         home-manager.nixosModules.default
         ({ config, pkgs, ... }: {
           home-manager.users.umakanth = {
-            imports = [./user.nix ];
+            imports = [
+              ./user.nix 
+              ./modules/umakanth.nix
+              ./modules/hardware.nix
+            ];
             home.username = "umakanth";
             home.homeDirectory = "/home/umakanth";
           };
