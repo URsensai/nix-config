@@ -1,4 +1,5 @@
-{ inputs, config, pkgs, ... }:
+# core/default.nix
+{ config, pkgs, ... }:
 
 {
   imports =
@@ -8,10 +9,11 @@
       ./boot.nix
       ./core-package.nix
       ./networking.nix
-      ./nix-seeting.nix
+      ./nix-setting.nix 
       ./profile.nix
       ./system.nix
       ./umakanth.nix
       ./xserver.nix
+      ./version.nix
     ];
 }

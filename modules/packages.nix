@@ -1,51 +1,47 @@
 { pkgs }:
 
-{
-  nixpkgs.config.allowUnfree = true;
-
-  environment.systemPackages = with pkgs; [
-    google-chrome
-    fastfetch
-    git
-    wget
-    vscode
-    lshw
-    htop
-    kitty
-    libva-utils
-    nvidia-vaapi-driver
-    swaynotificationcenter
-    wlr-randr
-    ydotool
-    wl-clipboard
-    hyprland-protocols
-    hyprpicker
-    swayidle
-    swaylock
-    xdg-desktop-portal-hyprland
-    hyprpaper
-    wofi
-    firefox-wayland
-    swww
-    grim
-    xdg-utils
-    xdg-desktop-portal
-    qt5.qtwayland
-    qt6.qmake
-    qt6.qtwayland
-    adwaita-qt
-    adwaita-qt6
-    hyprland
-    glib
-    eww
-    lxqt.lxqt-policykit
-    rofi-wayland
-    rustup
-    brightnessctl
-    playerctl
-    mpv
-    slurp
-    openvpn
-    scribus
-  ];
-}
+[
+  pkgs.google-chrome
+  pkgs.fastfetch
+  pkgs.git
+  pkgs.wget
+  pkgs.vscode
+  pkgs.lshw
+  pkgs.htop
+  pkgs.kitty
+  pkgs.libva-utils
+  pkgs.nvidia-vaapi-driver
+  pkgs.swaynotificationcenter
+  pkgs.wlr-randr
+  pkgs.ydotool
+  pkgs.wl-clipboard
+  pkgs.hyprland-protocols
+  pkgs.hyprpicker
+  pkgs.swayidle
+  pkgs.swaylock
+  pkgs.xdg-desktop-portal-hyprland
+  pkgs.hyprpaper
+  pkgs.wofi
+  pkgs.firefox-wayland
+  pkgs.swww
+  pkgs.grim
+  pkgs.xdg-utils
+  pkgs.xdg-desktop-portal
+  pkgs.qt5.qtwayland
+  pkgs.qt6.qmake
+  pkgs.qt6.qtwayland
+  pkgs.adwaita-qt
+  pkgs.adwaita-qt6
+  pkgs.hyprland
+  pkgs.glib
+  pkgs.eww
+  pkgs.lxqt.lxqt-policykit
+  pkgs.rofi-wayland
+  pkgs.rustup
+  pkgs.brightnessctl
+  pkgs.playerctl
+  pkgs.mpv
+  pkgs.slurp
+  pkgs.openvpn
+  pkgs.scribus
+]
