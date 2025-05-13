@@ -152,7 +152,6 @@
         "lxqt-policykit-agent"
         "swww-daemon"
         "swww img .config/nix/kirill-bogomolov-tPpwJ1ij8es-unsplash.jpg"
-        "Hyprland"
       ];
     };
   };

@@ -1,4 +1,3 @@
-// filepath: /home/umakanth/.config/nix/modules/hyprland-session.nix
 { pkgs, ... }:
 
 {

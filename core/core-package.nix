@@ -3,7 +3,7 @@
 {
   
   nixpkgs.config.allowUnfree = true;
-  
+  programs.hyprland.enable = true;
   environment.systemPackages = [
     pkgs.google-chrome
     pkgs.fastfetch
