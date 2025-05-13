@@ -15,5 +15,6 @@
       ./umakanth.nix
       ./xserver.nix
       ./version.nix
+      ./start.nix
     ];
 }

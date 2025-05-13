@@ -6,4 +6,6 @@
     home.username = "umakanth";
     home.homeDirectory = "/home/umakanth";
   };
+
+  home-manager.useUserPackages = true;
 }
