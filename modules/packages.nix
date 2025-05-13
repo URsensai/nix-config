@@ -43,8 +43,6 @@
   pkgs.playerctl
   pkgs.mpv
   pkgs.slurp
-  pkgs.xfce.thunar
-  pkgs.xfce.thunar-volman
   pkgs.openvpn
   pkgs.scribus
 ]
