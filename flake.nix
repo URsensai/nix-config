@@ -9,9 +9,10 @@
     nixosConfigurations.reddy = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./core # Imports the default.nix in the core directory
+        ./core
         home-manager.nixosModules.default
         ({ config, pkgs, ... }: {
+          nixpkgs.config.allowUnfree = true; # Add this here
           home-manager.users.umakanth = {
             imports = [
               ./user.nix

@@ -10,5 +10,6 @@
     open = false;
     nvidiaSettings = true;
   };
+
   hardware.graphics.enable = true;
 }
