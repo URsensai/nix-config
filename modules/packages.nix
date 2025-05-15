@@ -29,4 +29,5 @@
     pkgs.hyprland
     pkgs.lxqt.lxqt-policykit
     pkgs.xfce.thunar
+    pkgs.bottles
 ]

@@ -1,11 +1,9 @@
 {pkgs, ...}: 
 
-{
-  
+{  
   nixpkgs.config.allowUnfree = true;
   programs.hyprland.enable = true;
   environment.systemPackages = [
-
     pkgs.git
     pkgs.wget
     pkgs.lshw
@@ -25,5 +23,6 @@
     pkgs.tmux
     pkgs.bat
     pkgs.fd
+    pkgs.transmission_4-qt
   ];
 }

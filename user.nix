@@ -12,8 +12,8 @@ in
   # Install packages from packages.nix
   home.packages = userPackages ++ [ ];
   imports = [
-    ./modules/hyprland.nix 
-    ./modules/settings.nix
+    ./modules/hyprland.nix
+    ./modules/settings.nix 
   ];
 
   # You can add other user-specific configurations here

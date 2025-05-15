@@ -16,5 +16,7 @@
       ./xserver.nix
       ./version.nix
       ./nvidia.nix
+      ./services.nix
+      ./thunar.nix
     ];
 }
