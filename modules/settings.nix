@@ -7,5 +7,5 @@
     settings = {
         download-dir = "/home/umakanth/games";
     };
-  }
+  };
 }

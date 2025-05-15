@@ -8,9 +8,6 @@
     packages = with pkgs; [ ]; # System-wide packages for the user, if any
   };
 
-  services.printing.enable = true;
-  services.openssh.enable = true;
-
   programs.nix-ld.enable = true;
   
   nixpkgs.config.allowUnfree = true;
