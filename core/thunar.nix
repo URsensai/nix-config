@@ -7,6 +7,6 @@
         thunar-volman
     ];
     environment.systemPackages = with pkgs; [
-    ffmpegthumbnailer
+        ffmpegthumbnailer
     ];
 }
