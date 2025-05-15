@@ -8,11 +8,12 @@ in
   home.homeDirectory = "/home/umakanth";
 
   home.stateVersion = "24.11"; # Or the latest Home Manager release tag
-
+  nixpkgs.config.allowUnfree = true;
   # Install packages from packages.nix
-
+  home.packages = userPackages ++ [ ];
   imports = [
-    ./modules/hyprland.nix # Import your Hyprland module (settings, etc.)
+    ./modules/hyprland.nix 
+    ./modules/settings.nix
   ];
 
   # You can add other user-specific configurations here

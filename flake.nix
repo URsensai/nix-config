@@ -12,7 +12,7 @@
         ./core
         home-manager.nixosModules.default
         ({ config, pkgs, ... }: {
-          nixpkgs.config.allowUnfree = true; # Add this here
+          nixpkgs.config.allowUnfree = true;
           home-manager.users.umakanth = {
             imports = [
               ./user.nix

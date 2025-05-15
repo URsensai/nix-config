@@ -63,8 +63,6 @@
         ",XF86MonBrightnessDown,exec,brightnessctl set 5%-"
         ",XF86MonBrightnessUp,exec,brightnessctl set +5%"
       ];
-      windowrule = [
-      ];
       general = {
         gaps_in = 5;
         gaps_out = 10;
@@ -72,7 +70,7 @@
       };
       misc = {
         layers_hog_keyboard_focus = true;
-        initial_workspace_tracking = 0;
+        initial_workspace_tracking = 1;
         mouse_move_enables_dpms = true;
         key_press_enables_dpms = false;
         disable_hyprland_logo = true;
@@ -123,23 +121,23 @@
         new_on_top = 1;
         mfact = 0.5;
       };
-      #env = [
+      env = [
        #"NIXPKGS_ALLOW_UNFREE, 1"
-        #"XDG_CURRENT_DESKTOP, Hyprland"
-        #"XDG_SESSION_TYPE, wayland"
-        #"XDG_SESSION_DESKTOP, Hyprland"
-        #"GDK_BACKEND, wayland, x11"
-        #"CLUTTER_BACKEND, wayland"
-        #"QT_QPA_PLATFORM=wayland;xcb"
-        #"QT_WAYLAND_DISABLE_WINDOWDECORATION, 1"
-        #"QT_AUTO_SCREEN_SCALE_FACTOR, 1"
-        #"SDL_VIDEODRIVER, x11"
-        #"MOZ_ENABLE_WAYLAND, 1"
-        #"AQ_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1"
-        #"GDK_SCALE,1"
-        #"QT_SCALE_FACTOR,1"
-        #"EDITOR,nvim"
-      #];
+        "XDG_CURRENT_DESKTOP, Hyprland"
+        "XDG_SESSION_TYPE, wayland"
+        "XDG_SESSION_DESKTOP, Hyprland"
+        "GDK_BACKEND, wayland, x11"
+        "CLUTTER_BACKEND, wayland"
+        "QT_QPA_PLATFORM=wayland;xcb"
+        "QT_AUTO_SCREEN_SCALE_FACTOR, 1"
+        "SDL_VIDEODRIVER, x11"
+        "MOZ_ENABLE_WAYLAND, 1"
+        "GDK_SCALE,1"
+        "QT_SCALE_FACTOR,1"
+        "LIBVA_DRIVER_NAME,nvidia"
+        "__GLX_VENDOR_LIBRARY_NAME,nvidia"
+        "NVD_BACKEND,direct"
+      ];
       layerrule = [
         "blur, wlogout"
         "blur, kitty"
@@ -152,6 +150,10 @@
         "lxqt-policykit-agent"
         "swww-daemon"
         "swww img .config/nix/kirill-bogomolov-tPpwJ1ij8es-unsplash.jpg"
+        "firefox"
+      ];
+      windowrule = [
+        "workspace 2 silent, class:^(firefox)$"
       ];
     };
   };
