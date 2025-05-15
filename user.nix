@@ -13,6 +13,7 @@ in
   home.packages = userPackages ++ [ ];
   imports = [
     ./modules/hyprland.nix
+    ./modules/starship.nix
   ];
 
   # You can add other user-specific configurations here
