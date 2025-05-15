@@ -24,5 +24,6 @@
     pkgs.bat
     pkgs.fd
     pkgs.transmission_4-qt
+    pkgs.python314
   ];
 }
