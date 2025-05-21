@@ -30,4 +30,5 @@
     pkgs.lxqt.lxqt-policykit
     pkgs.xfce.thunar
     pkgs.bottles
+    pkgs.mediawriter
 ]
